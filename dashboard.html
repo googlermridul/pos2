@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <link rel="stylesheet" href="css/jquery-editable-select.css">
+   <link rel="stylesheet" href="css/dashboard.css">
+   <title>Admin panel</title>
+</head>
+<body>
+
+
+   <nav id="sidenav" class="show">
+      <div class="header text-center">
+         <span class="mt-3">HOME</span> <a href="#" id="showsidenav"><i class="fa fa-bars"></i> </a>
+      </div>
+      <ul class="main-ul">
+         <li class="list-item"><a href="#" class="active"><i class="fa fa-th-large"></i><span>Dashboard</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-cog"></i><span>Shop Setting</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-user-circle-o"></i><span>Account</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-database"></i><span>Product</span> <i class="drop-icon fa fa-caret-down"></i></a>
+            <ul class="drop-down">
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Service</a></li>
+            </ul>
+         </li>
+         <li class="list-item"><a href="#"><i class="fa fa-credit-card"></i><span>Installment</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-truck"></i><span>Sale</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-list"></i><span>Stock</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-envelope-o"></i><span>Send SMS</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-database"></i><span>Database Backup</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-cloud-upload"></i><span>Update Software</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-credit-card"></i><span>Installment</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-truck"></i><span>Sale</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-list"></i><span>Stock</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-envelope-o"></i><span>Send SMS</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-database"></i><span>Database Backup</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-cloud-upload"></i><span>Update Software</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-credit-card"></i><span>Installment</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-truck"></i><span>Sale</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-list"></i><span>Stock</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-envelope-o"></i><span>Send SMS</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-database"></i><span>Database Backup</span></a></li>
+         <li class="list-item"><a href="#"><i class="fa fa-cloud-upload"></i><span>Update Software</span></a></li>
+      </ul>
+   </nav>
+
+   <section id="pageContent" class="">
+      <div class="container">
+         <!-- ============================== TOP HEADER ============================== -->
+         <nav id="topHeader">
+            <div class="pageContentMenu">
+               <a href="#" id="showsidenav2"><i class="fa fa-bars"></i> </a>
+            </div>
+            <form>
+               <div class="input-group">
+                  <div class="input-group-prepend">
+                     <span class="input-group-text"><i class="fa fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search here...">
+               </div>
+            </form>
+            <div class="part-2">
+               <!-- ========== NOTIFICATION ========== -->
+               <div class="notification-area">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="badge">9</span>
+               </div>
+               <div class="dropdown-notification">
+                  <div class="header">
+                     <div class="txt-box">
+                        <span>6 New Notifications</span>
+                        <a href="#">Clear all</a>
+                     </div>
+                  </div>
+                  <div class="body">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-envelope-o"></i>
+                              <div class="msg">
+                                 <p>New customer registered</p>
+                                 <span>2 sec ago</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-envelope-o"></i>
+                              <div class="msg">
+                                 <p>New order recieved</p>
+                                 <span>30 min ago</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-envelope-o"></i>
+                              <div class="msg">
+                                 <p>Server limit reached!</p>
+                                 <span>1 hrs ago</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-envelope-o"></i>
+                              <div class="msg">
+                                 <p>Apps are ready for update</p>
+                                 <span>6 hrs ago</span>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="footer">
+                     <a href="#">View all</a>
+                  </div>
+               </div>
+               <!-- ========== PROFILE ========== -->
+               <div class="profile">
+                  <img src="img/samantha.jpg" alt="">
+                  <span class="intro">Samantha <i class="fa fa-angle-down"></i></span>
+               </div>
+               <div class="dropdown-profile">
+                  <div class="header text-center">
+                     <div class="img-box">
+                        <img src="img/samantha.jpg" alt="">
+                     </div>
+                     <div class="txt-box">
+                        <p>Samantha Akkineni</p>
+                        <span>samantha@gmail.com</span>
+                     </div>
+                  </div>
+                  <div class="body">
+                     <ul>
+                        <li><a href="#"><i class="fa fa-user-o"></i><span> My profile</span></a></li>
+                        <li><a href="#"><i class="fa fa-pencil-square-o"></i><span> Edit profile</span></a></li>
+                        <li><a href="#"><i class="fa fa-refresh"></i><span> Switch user</span></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i><span> Log out</span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+
+
+         <!-- ============================== DASHBOARD SECTION ============================== -->
+         <div id="dashboardSection">
+            <div class="row mx-0">
+               <div class="col">
+                  <h4 class="header">DASHBOARD</h4>
+               </div>
+            </div>
+            <div class="row mx-0">
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-1">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-smile-o"></i>
+                           <h4 class="mb-0">New Clients</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">23</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-75 pgb-blue" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-2">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-picture-o"></i>
+                           <h4 class="mb-0">New Projects</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">169</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-50 pgb-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-3">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-credit-card"></i>
+                           <h4 class="mb-0">New Invoices</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">157</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-100 pgb-violet" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-4">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-shopping-cart"></i>
+                           <h4 class="mb-0">New Sales</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">236</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-25 pgb-orange" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-5">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-shopping-cart"></i>
+                           <h4 class="mb-0">New Sales</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">236</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-25 pgb-orange" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-6">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-credit-card"></i>
+                           <h4 class="mb-0">New Invoices</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">157</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-75 pgb-violet" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-7">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-picture-o"></i>
+                           <h4 class="mb-0">New Projects</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">169</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-50 pgb-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xl-3">
+                  <div class="dash-box box-8">
+                     <div class="upper">
+                        <div class="part1">
+                           <i class="fa fa-smile-o"></i>
+                           <h4 class="mb-0">New Clients</h4>
+                        </div>
+                        <div class="part2">
+                           <h3 class="mb-0">23</h3>
+                        </div>
+                     </div>
+                     <div class="progress">
+                        <div class="progress-bar w-75 pgb-blue" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div id="tableSection">
+            <div class="row mx-0">
+               <div class="col-12">
+                  <div class="table-top">
+                     <form class="">
+                        <div class="form-group">
+                           <input type="email" class="form-control" placeholder="Search">
+                        </div>
+                     </form>
+                  </div>
+                  <div id="printSource" class="main-table">
+                     <table class="table table-striped">
+                        <thead class="">
+                           <tr>
+                              <th scope="col">SN</th>
+                              <th scope="col">Code</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Type</th>
+                              <th scope="col">Category</th>
+                              <th scope="col">Purchase Price</th>
+                              <th scope="col">Sale Price</th>
+                              <th scope="col">Added By</th>
+                              <th scope="col">Actions</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr class="table-row">
+                              <td>69</td>
+                              <td>080</td>
+                              <td>Mobile case</td>
+                              <td>Product</td>
+                              <td>N/A</td>
+                              <td>tk <span>11.50</span></td>
+                              <td>tk <span>11.50</span></td>
+                              <td>Demo Admin</td>
+                              <td class="edit-btn">
+                                 <button type="button" class="btn fa-btn editme" data-toggle="modal" data-target="#productBox" data-toggle="tooltip" title="Edit me">
+                                    <i class="fa fa-pencil"></i>
+                                 </button>
+                                 <button type="button" class="btn fa-btn delme" data-toggle="tooltip" title="Delete me">
+                                    <i class="fa fa-trash-o"></i>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td>69</td>
+                              <td>080</td>
+                              <td>Mobile case</td>
+                              <td>Product</td>
+                              <td>N/A</td>
+                              <td>tk <span>11.50</span></td>
+                              <td>tk <span>11.50</span></td>
+                              <td>Demo Admin</td>
+                              <td class="edit-btn">
+                                 <button type="button" class="btn fa-btn editme" data-toggle="modal" data-target="#productBox" data-toggle="tooltip" title="Edit me">
+                                    <i class="fa fa-pencil"></i>
+                                 </button>
+                                 <button type="button" class="btn fa-btn delme" data-toggle="tooltip" title="Delete me">
+                                    <i class="fa fa-trash-o"></i>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td>69</td>
+                              <td>080</td>
+                              <td>Mobile case</td>
+                              <td>Product</td>
+                              <td>N/A</td>
+                              <td>tk <span>11.50</span></td>
+                              <td>tk <span>11.50</span></td>
+                              <td>Demo Admin</td>
+                              <td class="edit-btn">
+                                 <button type="button" class="btn fa-btn editme" data-toggle="modal" data-target="#productBox" data-toggle="tooltip" title="Edit me">
+                                    <i class="fa fa-pencil"></i>
+                                 </button>
+                                 <button type="button" class="btn fa-btn delme" data-toggle="tooltip" title="Delete me">
+                                    <i class="fa fa-trash-o"></i>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td>69</td>
+                              <td>080</td>
+                              <td>Mobile case</td>
+                              <td>Product</td>
+                              <td>N/A</td>
+                              <td>tk <span>11.50</span></td>
+                              <td>tk <span>11.50</span></td>
+                              <td>Demo Admin</td>
+                              <td class="edit-btn">
+                                 <button type="button" class="btn fa-btn editme" data-toggle="modal" data-target="#productBox" data-toggle="tooltip" title="Edit me">
+                                    <i class="fa fa-pencil"></i>
+                                 </button>
+                                 <button type="button" class="btn fa-btn delme" data-toggle="tooltip" title="Delete me">
+                                    <i class="fa fa-trash-o"></i>
+                                 </button>
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td>69</td>
+                              <td>080</td>
+                              <td>Mobile case</td>
+                              <td>Product</td>
+                              <td>N/A</td>
+                              <td>tk <span>11.50</span></td>
+                              <td>tk <span>11.50</span></td>
+                              <td>Demo Admin</td>
+                              <td class="edit-btn">
+                                 <button type="button" class="btn fa-btn editme" data-toggle="modal" data-target="#productBox" data-toggle="tooltip" title="Edit me">
+                                    <i class="fa fa-pencil"></i>
+                                 </button>
+                                 <button type="button" class="btn fa-btn delme" data-toggle="tooltip" title="Delete me">
+                                    <i class="fa fa-trash-o"></i>
+                                 </button>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="table-pagination">
+                     <div class="print-btn">
+                        <button id="btnPrint" class="btn">Print</button>
+                     </div>
+                     <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                           <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active">
+                           <span class="page-link">2<span class="sr-only">(current)</span></span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div id="topItemTable">
+            <div class="row mx-0">
+               <div class="col-lg-6">
+                  <h5 class="mb-3"><i class="fa fa-cart"></i> Top 10 Items This Month</h5>
+                  <div class="main-table">
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="col-lg-6 mt-4 mt-lg-0">
+                  <h5 class="mb-3"><i class="fa fa-cart"></i> Top 10 Items This Month</h5>
+                  <div class="main-table">
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                           <tr>
+                              <td>Walk-in Customer</td>
+                              <td>tk <span>2278</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="shopSetting">
+            <div class="row mx-0">
+               <div class="col-12 setting-box">
+                  <h5 class="mb-3"><i class="fa fa-cart"></i> Shop Setting</h5>
+                  <form>
+                     <div class="form-row mx-0">
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">Shop Name</label>
+                           <input type="" class="form-control" value="Biponi super shop">
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">Address</label>
+                           <input type="" class="form-control" value="421 E. Commerce San Antonio, TX 78205">
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">Phone</label>
+                           <input type="" class="form-control" value="(210) 224-1313">
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">Invoice Footer</label>
+                           <input type="" class="form-control" value="Thank you for visiting us!">
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">Invoice Prefix</label>
+                           <input type="" class="form-control" placeholder="Invoice Prefix">
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">VAT Registration No.</label>
+                           <input type="" class="form-control" value="093784728373">
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">VAT collection</label>
+                           <div class="input-group">
+                              <select class="form-control" id="editable-select" placeholder="Vat collection">
+                              	<option>Yes</option>
+                              	<option>No</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form-group col-lg-4 col-sm-6">
+                           <label for="">Print Format</label>
+                           <div class="input-group">
+                              <select class="form-control" id="editable-select" placeholder="Print Format">
+                                 <option>No Print</option>
+                              	<option>Thermal Print</option>
+                              	<option>Half A4 Print</option>
+                              	<option>A4 Print</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form-group upload-profile col-lg-4 col-sm-6">
+                           <div class="img-box">
+                              <img src="img/samantha.jpg" alt="">
+                              <div class="upload-img">
+                                 <form class="img-form">
+                                    <div class="form-group text-center">
+                                       <label for="exampleFormControlFile1">Upload Image</label>
+                                       <input type="file" onchange="form.submit()" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+   <script src="js/jquery-editable-select.min.js"></script>
+   <script src="js/style.js"></script>
+   <script type="text/javascript">
+
+
+      $("#showsidenav, #showsidenav2").click(function(e){
+         e.preventDefault();
+         $("#sidenav").toggleClass("left");
+         $("#pageContent").toggleClass("active");
+      });
+
+      $("#sidenav a").click(function(event){
+      event.preventDefault();
+         if($(this).next('ul').length){
+            $(this).next().toggle('fast');
+            $(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+         }
+      });
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+
+      $("#btnPrint").click(function(){
+         printDiv("printSource");
+      });
+
+      function printDiv(divName) {
+         var printContents = document.getElementById(divName).innerHTML;
+         var originalContents = document.body.innerHTML;
+
+         document.body.innerHTML = printContents;
+         window.print();
+         document.body.innerHTML = originalContents;
+      }
+
+   </script>
+</body>
+</html>

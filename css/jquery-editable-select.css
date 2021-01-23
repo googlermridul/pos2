@@ -1,0 +1,17 @@
+/**
+ * jQuery Editable Select
+ * Indri Muska <indrimuska@gmail.com>
+ *
+ * Source on GitHub @ https://github.com/indrimuska/jquery-editable-select
+ */
+
+input.es-input { padding-right: 20px !important; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG2YAABzjgAA4DIAAIM2AAB5CAAAxgwAADT6AAAgbL5TJ5gAAABGSURBVHjaYvz//z8DOYCJgUzA0tnZidPK8vJyRpw24pLEpwnuVHRFhDQxMDAwMPz//x+OOzo6/iPz8WFGuocqAAAA//8DAD/sORHYg7kaAAAAAElFTkSuQmCC) right center no-repeat; }
+input.es-input {
+	-webkit-border-radius: 3px !important;}
+input.es-input.open {
+	-webkit-border-radius: 3px !important;}
+.es-list { position: absolute; padding: 0; margin: 0; border: 1px solid #e3e3e3; display: none; z-index: 1000; background: #fff; max-height: 160px; overflow-y: auto; border-radius: 3px;
+	-moz-box-shadow: 0 2px 3px #e5e5e5; -webkit-box-shadow: 0 2px 3px #e5e5e5; box-shadow: 0 2px 3px #e5e5e5; }
+.es-list li { display: block; padding: 5px 10px; margin: 0; font-size: 14px;}
+.es-list li.selected { background: #ebecee; }
+.es-list li[disabled] { opacity: .5; }

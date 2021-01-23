@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  background: #fff; }
+
+h5, p, span, a, .btn, th, td, label {
+  font-size: 14px; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin-bottom: 0 !important; }
+
+i {
+  font-size: 14px; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 42px;
+  font-weight: 500; }
+
+h3 {
+  font-size: 36px;
+  font-weight: 500; }
+
+h4 {
+  font-size: 24px;
+  font-weight: 500; }
+
+h5 {
+  font-size: 18px; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F2F2FF; }
+
+::-webkit-input-placeholder {
+  font-size: 14px !important; }
+
+.img-fluid {
+  width: -webkit-fill-available !important;
+  height: -webkit-fill-available !important; }
+
+#printSection {
+  padding-top: 50px; }
+  #printSection .container {
+    max-width: 90%; }
+  #printSection .top-area {
+    position: relative; }
+    #printSection .top-area .img-box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 0; }
+      #printSection .top-area .img-box img {
+        width: 100%;
+        border-radius: 100px; }
+    #printSection .top-area .txt-box h3 span {
+      font-size: 30px;
+      padding: 5px 20px;
+      border-radius: 3px;
+      color: #fff;
+      background: #223242; }
+  #printSection .middle-area .customer-details {
+    margin-top: 50px; }
+    #printSection .middle-area .customer-details .col-6 p span:first-child {
+      display: inline-block;
+      width: 250px;
+      font-weight: 500; }
+  #printSection .product-table {
+    margin-top: 50px; }
+    #printSection .product-table .table thead th {
+      font-weight: 500;
+      padding: .5rem;
+      border: 1px solid #999; }
+    #printSection .product-table .table tr td {
+      vertical-align: baseline;
+      padding: .5rem;
+      border: 1px solid #999; }
+  #printSection .total-table {
+    margin-top: 50px; }
+    #printSection .total-table .table tr {
+      display: inline-table;
+      width: 100%;
+      border-bottom: 1px solid #999; }
+      #printSection .total-table .table tr td {
+        vertical-align: baseline;
+        padding: 0.5rem;
+        border: none;
+        font-weight: 500; }
+    #printSection .total-table .table tr:first-child {
+      border-top: 1px solid #999; }
+    #printSection .total-table .table tr th:last-child,
+    #printSection .total-table .table tr td:last-child {
+      width: 15%;
+      text-align: right; }
+  #printSection .footer-area {
+    margin-top: 100px; }
+    #printSection .footer-area .sign-area {
+      display: flex;
+      justify-content: space-between; }
+      #printSection .footer-area .sign-area p {
+        border-top: 1px solid #999;
+        padding: 10px 20px; }
